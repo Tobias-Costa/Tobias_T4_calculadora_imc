@@ -1,3 +1,6 @@
+@import url(./header.css);
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -12,8 +15,33 @@ body{
     flex-direction: column;
     text-align: center;
     font-size: x-large;
+}
+
+.landing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    width: 100vw;
+    background-image: url(../assets/landing_img.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.landing::after{
+    content: "";
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+}
+
+.landing h1{
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.24);
     color: #ffff;
-    background-color: #7bd9f8;
+    font-size: 3em;
 }
 
 h1{
@@ -25,7 +53,7 @@ h2{
 }
 
 p{
-    margin: 5px;
+    margin: 20px;
 }
 
 .texto{
