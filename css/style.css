@@ -1,5 +1,14 @@
 @import url(./header.css);
+@import url(./landing.css);
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0fa81c;
+}
 
 *{
     margin: 0;
@@ -13,35 +22,41 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
     font-size: x-large;
+    overflow-x: hidden;
 }
 
-.landing{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 120vh;
+
+main{
+    height: 190vh;
     width: 100vw;
-    background-image: url(../assets/landing_img.png);
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    margin-left: 3rem;
 }
 
-.landing::after{
-    content: "";
-    height: 120%;
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 95vw;
+    flex-direction: row;
+}
+
+.texto{
+    width: 50%;
+    text-align: justify;
+
+}
+
+.img{
+    width: 50%;
+    margin: 2rem;
+}
+
+.img img{
     width: 100%;
-    position: absolute;
-    z-index: 8;
-}
-
-.landing h1{
-    text-shadow: 4px 4px 10px rgba(0,0,0,0.24);
-    color: #ffff;
-    font-size: 3em;
+    height: 100%;
+    border-radius: 30px;
 }
 
 h1{
@@ -50,14 +65,12 @@ h1{
 
 h2{
     margin: 1.5rem;
+    color: #0fa81c;
 }
 
 p{
     margin: 20px;
-}
-
-.texto{
-    margin: 2.5rem;
+    color: #033007;
 }
 
 

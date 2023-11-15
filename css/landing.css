@@ -1,0 +1,28 @@
+.landing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    width: 100vw;
+    background-image: url(../assets/landing_img.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 5rem;
+}
+
+.landing::after{
+    content: "";
+    height: 130%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    /* background: linear-gradient(to bottom, rgb(0,0,0,0) 0,rgb(0,0,0,0) 60%, #ffffff 90% ); */
+}
+
+.landing h1{
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.24);
+    color: #ffff;
+    font-size: 3em;
+}
