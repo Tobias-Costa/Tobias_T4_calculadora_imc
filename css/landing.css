@@ -94,12 +94,12 @@
 }
 .landing2 #calculadora{
     top: -75px;
-    left: 1100px;
+    left: 1300px;
     z-index: 12;
 }
 .landing2 #matematica{
     top: 250px;
-    left: 1100px;
+    left: 1300px;
     z-index: 10;
     transform: rotate(15deg);
     scale: 1.1;

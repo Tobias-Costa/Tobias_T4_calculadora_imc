@@ -5,8 +5,11 @@
     gap: 3.5rem;
 }
 
-#img img{
+#img{
     width: 32rem;
+    height: 16rem;
+    border-radius: 15px;
+    filter: invert(88%) sepia(15%) saturate(410%) hue-rotate(78deg) brightness(92%) contrast(91%);
 }
 
 #calculadora-box{
@@ -15,7 +18,7 @@
     gap: 2rem;
     padding: 2rem;
     color: #f8fafc;
-    background-color: #0fa81c;
+    background-color: #76B947;
     border-radius: 8px;
 }
 
@@ -50,14 +53,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #3f3f46;
+    background-color: #94C973;
     padding: 0.3rem;
     border-radius: 3px;
     margin-top: 3px;
 }
 
 .input-field span, .input-field i{
-    color: #cbd5e1;
+    color: #f8fafc;
     font-size: 1.3rem;
     padding: 0.6rem 1rem;
 }
@@ -78,7 +81,7 @@
 }
 
 .faixaEtaria-btn {
-    background-color: #3f3f46;
+    background-color: #94C973;
     color: #f8fafc;
     border: none;
     padding: 0.5rem 1rem;
@@ -88,11 +91,11 @@
 }
 
 .faixaEtaria-btn:hover {
-    background-color: #007109;
+    background-color: #B1D8B7;
 }
 
 .faixaEtaria-btn.selected {
-    background-color: #007109;
+    background-color: #B1D8B7;
 }
 
 .input-field input::-webkit-outer-spin-button, .input-field input::-webkit-inner-spin-button{
@@ -107,7 +110,7 @@
     border: none;
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: #007109;
+    background-color: #94C973;
     color: #f8fafc;
     padding: 0.5rem 0;
     border-radius: 3px;
@@ -143,5 +146,5 @@
 }
 
 .atencao{
-    color:#dc2626;
+    color:#f97156;
 }

@@ -52,13 +52,12 @@ form.addEventListener('submit', function(event) {
         }
     }
 
-    atualizarImagemIMC(imc);
+    atualizarImagemIMC(imc, faixaEtaria);
 
     value.textContent = imc.replace('.',',');
     document.getElementById('descricao').textContent = descricao;
 });
 
-// Adicione um listener para os botões da faixa etária
 const faixaEtariaButtons = document.querySelectorAll('.faixaEtaria-btn');
 
 faixaEtariaButtons.forEach(button => {
@@ -69,39 +68,34 @@ faixaEtariaButtons.forEach(button => {
 });
 
 function atualizarImagemIMC(imc, faixaEtaria) {
-    const imgElement = document.querySelector('#img img');
+    var imgElement = undefined;
 
-    if (!imgElement) {
-        console.error('Elemento de imagem não encontrado.');
-        return;
-    }
-    
     if (faixaEtaria === 'adulto') {
         if (imc < 18.5) {
-            imgElement.src = '../assets/baixo-peso.jpg';
+            imgElement = '../assets/baixo-peso.png';
         } else if (imc >= 18.5 && imc < 25) {
-            imgElement.src = '../assets/normal.jpg';
+            imgElement = '../assets/normal.png';
         } else if (imc >= 25 && imc < 30) {
-            imgElement.src = '../assets/sobrepeso.jpg';
+            imgElement = '../assets/sobrepeso.png';
         } else if (imc >= 30 && imc < 35) {
-            imgElement.src = '../assets/obesidade1.jpg';
+            imgElement = '../assets/obesidade1.png';
         } else if (imc >= 35 && imc < 40) {
-            imgElement.src = '../assets/obesidade2.jpg';
+            imgElement = '../assets/obesidade2.png';
         }  else {
-            imgElement.src = '../assets/obesidade3.jpg';
+            imgElement = '../assets/obesidade3.png';
         }
     } else if (faixaEtaria === 'idoso') {
         if (imc <= 22.5) {
-            imgElement.src = '../assets/baixo-peso.jpg';
+            imgElement = '../assets/baixo-peso.png';
         } else if (imc > 22.5 && imc < 27) {
-            imgElement.src = '../assets/normal.jpg';
+            imgElement = '../assets/normal.png';
         } else {
-            imgElement.src = '../assets/sobrepeso.jpg';
+            imgElement = '../assets/sobrepeso.png';
         }
     }
-}
 
-// Direcionamento da calculadora
+    document.getElementById('img').src = imgElement;
+}
 
 
 // Carrossel
