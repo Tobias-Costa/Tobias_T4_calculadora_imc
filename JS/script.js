@@ -68,7 +68,7 @@ faixaEtariaButtons.forEach(button => {
 });
 
 function atualizarImagemIMC(imc, faixaEtaria) {
-    var imgElement = undefined;
+    var imgElement = null;
 
     if (faixaEtaria === 'adulto') {
         if (imc < 18.5) {
