@@ -83,3 +83,9 @@ p{
     margin: 20px;
     color: #033007;
 }
+
+
+#hidden{
+    visibility: hidden;
+    display: none;
+}
